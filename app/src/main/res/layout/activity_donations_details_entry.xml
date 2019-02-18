@@ -1,0 +1,127 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/primary_text"
+        android:typeface="serif"
+        android:text="Select Food"/>
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_drawel"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Breakfast"
+            android:typeface="serif"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/radio_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_drawel"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Lunch"
+            android:typeface="serif"
+            android:textColor="@color/primary_text" />
+        <RadioButton
+            android:id="@+id/radio_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_drawel"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Dinner"
+            android:checked="true"
+            android:typeface="serif"
+            android:textColor="@color/primary_text" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary_text"
+        android:typeface="serif"
+        android:text="Number of serves"/>
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:typeface="serif"
+        android:inputType="number"
+        android:hint="Enter count"/>
+
+    <TextView
+        android:id="@+id/txt_select_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@color/primary_text"
+        android:typeface="serif"
+        android:gravity="center_vertical"
+        android:background="@drawable/view_bg"
+        android:drawableRight="@drawable/ic_location"
+        android:text="Select the location"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:typeface="serif"
+        android:textColor="@color/primary_text"
+        android:text="Address to pickup"/>
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:typeface="serif"
+        android:hint="Enter address to pickup"/>
+
+    <Button
+        style="@style/StyleBtn"
+        android:id="@+id/btn_donate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Donate"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+    android:orientation="vertical"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_banner"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:text="Thank You :)"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mylayout"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:text="Dear User"
+            android:typeface="serif"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt_thanks_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:text="@string/thnxdonator"
+            android:typeface="serif"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/txt_donation_title"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            android:text="Pickup Address"
+            android:typeface="serif"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt_donor_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            android:text="@string/thnxdonator"
+            android:typeface="serif"
+            android:visibility="gone"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/txt_delivery_title"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            android:text="Delivery Address"
+            android:typeface="serif"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt_delivery_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="@string/thnxdonator"
+            android:typeface="serif"
+            android:layout_margin="5dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:text="Thanks"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:text="No Food Waste Team"
+            android:typeface="serif"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:text="9087790877"
+            android:typeface="serif"/>
+
+    </LinearLayout>
+</LinearLayout>
